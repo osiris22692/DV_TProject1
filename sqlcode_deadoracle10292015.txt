@@ -1,0 +1,14 @@
+CREATE TABLE household_power_consumption (
+-- Change table_name to the table name you want.
+ Global_reactive_power varchar2(4000),
+ Date_time varchar2(4000),
+ Date number(38,4),
+ Time number(38,4),
+ Global_active_power number(38,4),
+  Global_reactive_power number(38,4),
+ Voltage number(38,4),
+ Global_intensity number(38,4),
+ Sub_metering_1 number(38,4),
+ Sub_metering_2 number(38,4),
+ Sub_metering_3 number(38,4)
+ );
