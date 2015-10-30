@@ -3,7 +3,7 @@ require(dplyr)
 require(ggplot2)
 require(lubridate)
 
-setwd("C:/Users/jasta/OneDrive/Documents/Classes/Fall 2015/DataVisualizations/DV_TProject1/01 Data")
+setwd("~/DataVisualization/DV_TProject1/01 Data")
 file_path <- "household_power_consumption.csv"
 
 df <- read.csv(file_path, stringsAsFactors = FALSE)
