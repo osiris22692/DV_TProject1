@@ -3,7 +3,7 @@ require(dplyr)
 require(ggplot2)
 require(lubridate)
 
-setwd("~/DataVisualization/DV_TProject1/01 Data")
+setwd("~/DataVisualizations/DV_TProject1/01 Data")
 file_path <- "household_power_consumption.csv"
 
 df <- read.csv(file_path, stringsAsFactors = FALSE)
@@ -37,8 +37,8 @@ if( length(measures) > 1 || ! is.na(dimensions)) {
 # df["State"] <- data.frame(lapply(df["State"], toupper))
 
 # Get rid of all characters in measures except for numbers, the - sign, and period.dimensions
-if( length(measures) > 1 || ! is.na(measures)) {
-  for(m in measures) {
+if( length(dimensions) > 1 || ! is.na(dimensions)) {
+  for(m in dimensions) {
     df[m] <- data.frame(lapply(df[m], gsub, pattern="[^--.0-9]",replacement= ""))
   }
 }
