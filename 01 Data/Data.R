@@ -3,14 +3,14 @@ require(dplyr)
 require(ggplot2)
 require(lubridate)
 
-setwd("C:/Users/jasta/OneDrive/Documents/Classes/Fall 2015/DataVisualizations/DV_TProject1/01 Data")
+setwd("~/DataVisualizations/DV_TProject1/01 Data")
 file_path <- "household_power_consumption.csv"
 
 df <- read.csv(file_path, stringsAsFactors = FALSE)
 
 str(df) # Uncomment this and  run just the lines to here to get column types to use for getting the list of measures.
 
-measures <- c("Date", "Time", "Global_active_power", " Global_reactive_power", "Voltage" , "Global_intensity", "Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
+measures <- c("Globalactivepower", "Globalreactivepower", "Voltage" , "Globalintensity", "Submetering1", "Submetering2", "Submetering3")
 #measures <- NA # Do this if there are no measures.
 
 df$Date_time<- with(df, paste(Date, Time, sep = " "))
