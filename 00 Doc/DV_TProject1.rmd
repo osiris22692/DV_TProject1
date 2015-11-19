@@ -8,6 +8,10 @@
 ```{r}
 source("../01 Data/Data.R", echo = TRUE)
 ```
+```{r}
+source("../01 Data/Data_Weather.R", echo = TRUE)
+```
+
 
 3) We uploaded the oracle database into tableau so we could manipulate the data
 
